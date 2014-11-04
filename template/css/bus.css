@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS TOL Buscador */
+
+.bus_container{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+#buscador{
+	background: #466FB5;
+	border-radius: 15px;
+	color: #fff;
+	font-family: arial;
+	font-size: 12px;
+	padding: 15px;
+	line-height: inherit;
+	position: relative;
+}
+#buscador .row{
+	margin: 0;
+}
+#buscador .bus_ida, #buscador .bus_vuelta{
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+#buscador .logos{display: none;}
+
+#buscador label{
+	color: #fff;
+	margin: 0;
+}
+#buscador .bus_venta{
+	color: red;
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	font-size: 20px;
+	vertical-align: middle;
+	width: auto;
+}
+#buscador .bus_lang {
+	float: right;
+	width: auto;
+}
+#buscador #bus_imgLang{
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	vertical-align: middle;
+}
+#buscador .input-error{
+	box-shadow: 0 0 5px rgba(255, 0, 0, .4);
+}
+#buscador .bus_origenDestino, #buscador .bus_calendar{
+	width: auto;
+}
+#buscador .bus_calendar img{
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+#buscador input[readonly="readonly"] , #buscador input[disabled] {
+	background-color: #fff;
+}
+#buscador select{padding: 2px 0; vertical-align: middle; display: inline-block;
+zoom: 1; /* Fix for IE7 */
+*display: inline; /* Fix for IE7 */}
+#buscador p{padding: 5px; margin: 0;}
+
+#buscador input[type=text]{
+	margin: 0;
+}
+
+#bus_salida, #bus_regreso{
+	width: 80%;
+	background-color: #fff;
+	display: inline;
+}
+
+#bus_buscar{
+	background-color: #F9DE2D;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	color: #466FB5;
+	cursor: pointer;
+	float: left;
+	margin-right: 13px;
+	margin-top:12px;
+	padding: 10px 12px;
+}
+#bus_buscar:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+}
+
+#bus_buscar .ico{
+	background: #466FB5 url(../img/search.png) no-repeat 50% 50%;
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	height: 20px;
+	vertical-align: middle;
+	width: 20px;
+	border-radius: 50%;
+}
+#bus_buscar .text{
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.bus_datepicker .ui-state-active{
+	background-color: #F90 !important;
+	background-image: none !important;
+	font-weight: bold;
+}
+
+.bus_venta{
+	color: #0063BE;
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	font-size: 24px;
+	vertical-align: middle;
+	width: auto;
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;
+}
+
+
+/*Bucador Horizontal */
+#buscador.horiz{
+	border-radius: 2px;
+	height: auto;
+	width: 100%;
+	top: 0;
+	left: 0px;
+}
+#buscador.horiz .cargador{
+	border-radius: 2px;
+	height: 100%;
+	width: 100%;
+}
+#buscador.horiz .bus_ida, #buscador.horiz .bus_vuelta{
+	display: block;
+}
+
+#buscador.horiz .bus_origenDestino, #buscador.horiz .bus_calendar, #buscador.horiz .header, #buscador.horiz #bus_radio, #buscador.horiz .boton{
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	padding: 0 1%;
+}
+#buscador.horiz  #bus_buscar{
+	margin: 0;
+}
+#buscador.horiz .bus_origenDestino{
+	text-align: right;
+}
+#buscador.horiz .bus_origenDestino input{margin-left: 10px; width: 250px;}
+#buscador.horiz .header{
+	text-align: center;
+}
+@media (min-width: 698px) and (max-width: 1200px){
+	#buscador.horiz .bus_origenDestino, #buscador.horiz .bus_calendar, #buscador.horiz .header, #buscador.horiz #bus_radio{padding: 0;}
+	#buscador.horiz .header{width: 49%}
+	#buscador.horiz #bus_radio{width: 49%; text-align: right;}
+	#buscador.horiz .bus_origenDestino{width: 45%;}
+	#buscador.horiz .bus_calendar{width: 38%;}
+	#buscador.horiz .boton{width: 15%; text-align: right;}
+	#buscador.horiz #bus_buscar{margin-right: 0;}
+}
+@media (max-width: 1200px){
+	#buscador.horiz .bus_ida, #buscador.horiz .bus_vuelta{
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+	}
+
+}
+@media (max-width: 850px){
+	#buscador.horiz .bus_origenDestino{text-align: left;}
+}
+@media (max-width: 698px){
+	.bus_container, #buscador{
+		position: inherit;
+		overflow: hidden;
+	}
+	#buscador.horiz .bus_origenDestino, #buscador.horiz .bus_calendar, #buscador.horiz .header, #buscador.horiz #bus_radio, #buscador.horiz .boton{
+		display: block;
+		clear: both;
+	}
+}
+@media (max-width: 698px){
+	#buscador.horiz .bus_origenDestino input{margin: 0; width: 100%}
+}
