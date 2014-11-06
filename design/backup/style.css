@@ -1,0 +1,9 @@
+#central{
+    position:absolute;
+    top:50%;
+    left:42%;
+    margin-top: -100px;
+    margin-left: -100px;
+	max-width: 80%;
+ 	height: auto;
+}

@@ -109,11 +109,23 @@ small { font-size: 84%; line-height: inherit; }
 #header { padding-top: 20px; padding-bottom: 20px; background-color: #fff; max-width: 1170px; margin: 0 auto; border-bttom: 10px solid red; }
 
 /*** Top links ***/
-.top-links { text-align: right; color: #0296c0; padding: 4px 0; border-bottom: 1px solid #fff; background: #0076a3 url(../images/patterns/gray_pattern.gif); }
+.top-links {color: #0296c0; padding: 4px 0; border-bottom: 1px solid #fff; background: #0076a3 url(../images/patterns/gray_pattern.gif); }
 .top-links a { color: #0296c0; }
 .top-links a:hover { color: #E10019; }
+#lang{width: auto;}
 
 /*** Logo ***/
+.lang-flag{
+	height: 17px;
+	width: 27px;
+	display: inline-block;
+	background: transparent url(../images/paises.png) no-repeat 0 0;
+	background-size: 90px 15px;
+	vertical-align: middle;
+}
+.lang-flag.en{background-position: -30px 0;}
+.lang-flag.pt{background-position: -65px 0;}
+
 #logo { padding-bottom: 10px; display: block;}
 
 /*** Search Form ***/

@@ -24,13 +24,13 @@ if (file_exists($paginaHtml)) {
 		"tplHeader"  => !empty($tplHeader[1]) ? $tplHeader[1]:"",
 		"tplContent"  => !empty($tplContent[1]) ? $tplContent[1]:"",
 		"tplFooter" => !empty($tplFooter[1]) ? $tplFooter[1]:"",
-		"url" => $s.".html"
+		"url" => ($s === 'index') ? '': $s.".html"
 	);
 
 	$html = new tmpl("template/andesmarchile.".$idioma[$lang].".html", $data);
 	$html->display();
 }else{
 	header("HTTP/1.0 404 Not Found");
-	echo "no esta el contenido ".$file;
+	echo "no esta el contenido ".$paginaHtml;
 }
 ?>
