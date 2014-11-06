@@ -1,0 +1,57 @@
+<!-- * * * * * * * * * * * * comienza el Widget Buscador Tol * * * * * * * * * * * * -->
+	<div class="bus_container form-search">
+		<div id="buscador">
+			<div class="cargador"></div>
+			<div class="header">
+				<div class="title"><h4 class="bus_venta"></h4></div>
+			</div>
+			<form id="bus_form" name="bus_form" method="post" action="#">
+				<div id="bus_radio">
+					<div class="bus_ida">
+						<input type="radio" id="bus_ida" name="radio" checked="checked" value="ida"/>
+						<label for="bus_ida" style="margin-right:7px"> </label>
+					</div>
+					<div class="bus_vuelta">
+						<input type="radio" id="bus_vuelta" name="radio" value="vuelta"/>
+						<label for="bus_vuelta"> </label>
+					</div>
+				</div>
+				<div class="bus_origenDestino">
+					<p>
+						<label for="bus_origen"></label>
+						<input type="text" name="bus_origen" id="bus_origen"/>
+						<input type="text" name="bus_origenId" id="bus_origenId" style="display: none;" />
+					</p>
+					<p>
+						<label for="bus_destino"></label>
+						<input type="text" name="bus_destino" id="bus_destino"/>
+						<input type="text" name="bus_destinoId" id="bus_destinoId" style="display: none;" />
+					</p>
+				</div>
+				<div class="bus_calendar">
+					<p>
+						<label for="bus_salida"></label>
+						<span class="relative"><input type="text" name="bus_salida" id="bus_salida"/></span>
+					</p>
+					<p>
+						<label for="bus_regreso"></label>
+						<span class="relative"><input type="text" name="bus_regreso" id="bus_regreso"/></span>
+					</p>
+				</div>
+				<div class="boton">
+					<div id="bus_buscar"/>
+						<span class="ico"></span>
+						<span class="text"></span>
+					</div>
+				</div>
+				<div class="tarjetas text-center">
+					<img src="/imagenes/tarjetas.png" alt="">
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<script>
+
+	</script>
+	<!-- * * * * * * * * * * * * Fin Widget Buscador Tol * * * * * * * * * * * * -->

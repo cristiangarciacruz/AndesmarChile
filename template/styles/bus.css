@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS TOL Buscador */
+
+.bus_container{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+#buscador .row{
+	margin: 0;
+}
+#buscador .bus_venta{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-weight: bold;
+}
+#buscador .bus_ida, #buscador .bus_vuelta{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 0;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+#buscador .bus_ida label, #buscador .bus_vuelta label{
+	display: inline-block;
+}
+#buscador .logos{display: none;}
+
+#buscador label{
+	color: #fff;
+	margin: 0;
+}
+#buscador .bus_lang {
+	float: right;
+	width: auto;
+}
+#buscador #bus_imgLang{
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	vertical-align: middle;
+}
+#buscador .input-error{
+	box-shadow: 0 0 5px rgba(255, 0, 0, .4);
+}
+#buscador .bus_origenDestino, #buscador .bus_calendar{
+	width: auto;
+}
+#buscador input[readonly="readonly"] , #buscador input[disabled] {
+	background-color: #fff;
+}
+#buscador select{padding: 2px 0; vertical-align: middle; display: inline-block;
+zoom: 1; /* Fix for IE7 */
+*display: inline; /* Fix for IE7 */}
+#buscador p{padding: 5px; margin: 0;}
+
+#buscador input[type=text]{
+	margin: 0;
+}
+
+#buscador .relative{
+	position: relative;
+}
+#bus_salida, #bus_regreso{
+	background-color: #fff;
+	display: inline;
+	z-index: 1;
+}
+#buscador .bus_calendar img{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 3px;
+	z-index: 2;
+	border-radius: 4px;
+}
+#buscador .boton{
+	text-align: right;
+	padding: 10px 0;
+}
+#bus_buscar{
+	background-color: #ff0461;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 12px;
+	display: inline-block;
+}
+#bus_buscar:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+}
+
+#bus_buscar .ico{
+	background: #bb0045 url(../images/ui-icons_ffffff_256x240.png) no-repeat -158px -111px;
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	height: 20px;
+	vertical-align: middle;
+	width: 20px;
+	border-radius: 50%;
+}
+#bus_buscar .text{
+	display: inline-block;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.bus_datepicker .ui-state-active{
+	background-color: #ff0461;
+	background-image: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*Bucador Horizontal */
+.horiz #buscador .cargador{
+	border-radius: 2px;
+	height: 100%;
+	width: 100%;
+}
+.horiz #buscador h4{
+	display: inline-block;
+	font-size: 1.3em;
+}
+.horiz #bus_form{display: inline;}
+
+.horiz #buscador .bus_ida, .horiz #buscador .bus_vuelta{display: block;}
+
+.horiz #buscador .bus_origenDestino, .horiz #buscador .bus_calendar, .horiz #buscador .header, .horiz #buscador #bus_radio, .horiz #buscador .boton{
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	padding: 0 .5em;
+}
+.horiz #buscador .bus_origenDestino input{width: 250px;}
+.horiz #buscador .header{
+	text-align: center;
+}
+.horiz #buscador .tarjetas{
+	display: none;
+}
+.ui-datepicker{
+	z-index: 100 !important;
+}
+@media (min-width: 698px) and (max-width: 1200px){
+	.horiz #buscador .header{display: none;}
+	.horiz  #buscador .boton{
+		/*width: 150px;**/
+	}
+}
+@media (max-width: 1200px){
+	.horiz #buscador .bus_ida, .horiz #buscador .bus_vuelta{
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+	}
+}
+@media (max-width: 850px){
+	.horiz #buscador .header{display: inline-block; width: 50%}
+	.horiz #bus_radio{width: 49%; text-align: right;}
+	.horiz #buscador .bus_origenDestino{text-align: left;}
+}
+@media (max-width: 698px){
+	.horiz #buscador .bus_origenDestino,
+	.horiz #buscador .bus_calendar{
+		width: 49%;
+		margin: 0;
+		padding: 0;
+	}
+	.horiz #buscador .bus_origenDestino input{margin: 0; width: 100%}
+
+	.horiz #buscador .boton{
+		display: block;
+		padding: .5em 0;
+	}
+}
+@media (max-width: 480px){
+	.horiz #buscador .bus_origenDestino, .horiz #buscador .bus_calendar, .horiz #buscador .header, .horiz #buscador #bus_radio, .horiz #buscador .boton{
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+	.horiz #bus_radio{text-align: left;}
+	.horiz #buscador .header{padding: .5em}
+}
