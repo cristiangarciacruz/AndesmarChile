@@ -106,7 +106,7 @@ small { font-size: 84%; line-height: inherit; }
 ----------------------------------------- */
 
 .header-bg {background: #fff; }
-#header { padding-top: 20px; padding-bottom: 20px; background-color: #fff; max-width: 1170px; margin: 0 auto; border-bttom: 10px solid red; }
+#header { padding-top: 20px; padding-bottom: 20px; background-color: #fff; max-width: 1170px; margin: 0 auto;}
 
 /*** Top links ***/
 .top-links {color: #0296c0; padding: 4px 0; border-bottom: 1px solid #fff; background: #0076a3 url(../images/patterns/gray_pattern.gif); }
@@ -127,6 +127,7 @@ small { font-size: 84%; line-height: inherit; }
 .lang-flag.pt{background-position: -65px 0;}
 
 #logo { padding-bottom: 10px; display: block;}
+
 
 /*** Search Form ***/
 .form-wrapper {min-height: 492px; }

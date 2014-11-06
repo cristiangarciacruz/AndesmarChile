@@ -6,7 +6,29 @@
 	<!-- javascript o estilos que debe ejecutarse al principio -->
 </tplHead>
 <tplHeader>
-	<div class="horiz">[[template/buscador.html]]</div>
+	<!-- BREADCRUMBS SECTION ================================================ -->
+	<section>
+		<div id="breadcrumbs-wrapp">
+			<div class="row">
+				<div class="nine columns">
+					<ul class="breadcrumbs hide-for-small">
+						<li><a href="/">Home</a></li>
+						<li class="current"><a href="single-article.html">Single article example</a></li>
+					</ul>
+				</div>
+
+			</div><!--end row-->
+		</div><!--end breadcrumbs-wrapp-->
+	</section>
+	<!--END BREADCRUMBS SECTION-->
+	<div class="wrapp-buscador">
+		<div class="row">
+			<div class="twelve columns horiz">
+				[[template/buscador.html]]
+			</div>
+		</div>
+	</div>
+
 </tplHeader>
 <tplContent>
 	<!-- FEATURED TEXT SECTION  ================================================ -->

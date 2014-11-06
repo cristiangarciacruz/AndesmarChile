@@ -118,11 +118,19 @@ zoom: 1; /* Fix for IE7 */
 }
 
 /*Bucador Horizontal */
-.horiz .form-search{
-	background: #F5F5F5 url(../images/patterns/gray_pattern.gif);
-	border: 10px solid rgba(245, 245, 245, 0.3);
-}
 
+.wrapp-buscador{
+	background: #F5F5F5 url(../images/patterns/gray_pattern.gif);
+	border-top: 7px solid rgba(245, 245, 245, 0.3);
+	border-bottom: 7px solid rgba(245, 245, 245, 0.3);
+}
+.horiz .form-search{
+	background: none;
+	border: none;
+}
+.horiz #buscador {
+	padding-bottom: 5px;
+}
 .horiz #buscador .bus_venta{
 	color: #0076a3;
 }

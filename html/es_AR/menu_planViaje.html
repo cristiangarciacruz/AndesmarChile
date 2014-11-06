@@ -1,0 +1,14 @@
+<h5>PLAN DE VIAJE</h5>
+<ul class="widget-list">
+	<li><a href="buses.html" class="active">Buses</a></li>
+	<li><a href="#">Dating guidelines</a></li>
+	<li><a href="#">Success stories</a></li>
+	<li><a href="#">Prespiciatis</a></li>
+	<li><a href="#">Lorem ipsum dolor sit</a></li>
+</ul>
+<script>
+	var pathArray = window.location.pathname.split( '/' );
+	$(function(){
+		$(".widget-list a[href='"+pathArray.pop()+"']").parent("li").addClass('current');
+	});
+</script>

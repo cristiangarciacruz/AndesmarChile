@@ -29,7 +29,7 @@ class tmpl{
             }
 
             /// Includes Files
-            preg_match_all("#\[\[([a-z0-9\-_\.\/]*\.html)\]\]#s", $this->template, $files);
+            preg_match_all("#\[\[([a-zA-Z0-9\-_\.\/]*\.html)\]\]#s", $this->template, $files);
             $contenido = "";
             foreach ($files[1] as $file) {
                 if (file_exists($file)) {
